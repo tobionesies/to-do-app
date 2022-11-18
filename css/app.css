@@ -1,0 +1,40 @@
+#container {
+    width: 500px;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h2,
+#add-reset-section,
+#toDo-section,
+#done-section {
+    margin: 10px 2%;
+}
+
+#done-section {
+    width: 500px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 200px;
+}
+
+
+#add-new-task-btn {
+    margin: 0 4px;
+}
+
+.btn-warning {
+    margin-right: 4px;
+
+}
+
+#done-btn {
+    margin-right: 4px;
+}
