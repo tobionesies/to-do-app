@@ -1,7 +1,7 @@
 let inputValidator = new InputValidator();
 
 class ButtonClickHandeler {
-    edit = function (button) {
+    editButton = function (button) {
         let fieldDisabled = button.parentNode.previousSibling.disabled;
 
         if (fieldDisabled == true) {
@@ -24,23 +24,25 @@ class ButtonClickHandeler {
     }
 
     //DONE
-    done = function (button) {
+    doneButton = function (button) {
 
-        li = button.parentNode.parentNode.parentNode;
+        // li = button.parentNode.parentNode.parentNode;
+        li = button;
 
         if (document.querySelector('#done-section ul') == null) {
             doneSection.append(ul);
             ul.id = 'done-ul';
         }
-        this.remove(button);
+        button.remove();
         return document.getElementById('done-ul').append(li);
     }
 
     //REMOVE
-    remove = function (button) {
-            return button.parentNode.parentNode.parentNode.remove();
+    removeButton = function (button) {
+            // return button.parentNode.parentNode.parentNode.remove();
+            button.remove();
     }
-    reset = function () {
+    resetButton = function () {
 
         newTask.value = '';
         let listElements = document.querySelectorAll('li');

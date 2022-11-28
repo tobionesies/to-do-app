@@ -15,7 +15,7 @@ class InputValidator {
     }
     
     isEmptyString = function(inputField) {
-        if(inputField.value.trim() === '' && this.elementExists(inputField.parentNode.parentNode.nextSibling.id, 'error-message') === false){
+        if(this.elementExists(inputField.parentNode.parentNode.nextSibling.id, 'error-message') === false){
             this.getFormatedErrorMessage(inputField);
         } 
     }
